@@ -1,0 +1,217 @@
+body {
+  margin: 0 auto;
+  background: #fcfffd;
+  max-width: 1980px;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffffcf;
+}
+.content {
+  display: flex;
+  height: 1080px;
+}
+
+.main {
+  font-family: "Roboto Slab", serif;
+  width: 100%;
+  background: #fcfff1;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  color: #2f3a4b;
+}
+.title-text {
+  font-size: 44px;
+  padding: 25px 0 19px 17px;
+}
+.title-exit {
+  padding: 37px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.title-exit__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  color: #2f3a4b;
+}
+.navbar {
+  box-shadow: 6px 8px 6.5px 0px #00000040;
+  background-color: #fff;
+  display: flex;
+  gap: 63px;
+  margin: 70px 586px 104px 29px;
+  padding: 25px;
+}
+.navbar__link {
+  font-size: 30px;
+  color: #2f3a4b;
+}
+.navbar__link.active {
+  text-decoration: underline;
+}
+.table {
+  box-shadow: 6px 8px 6.5px 0px #00000040;
+  background-color: #fff;
+  font-size: 20px;
+  margin: 0px 58px 74px 29px;
+  text-align: left;
+}
+td,
+th {
+  padding: 20px;
+  border-bottom: 1px solid #00000066;
+}
+.table_btn_update,
+.table_btn_create {
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+/* стили для модального окна */
+/* Стили для модального окна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 50px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.table_popup {
+  margin: 0 auto;
+  font-size: 30px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tasks {
+  font-family: Roboto;
+  background-color: #fff;
+  display: flex;
+  gap: 30px;
+  min-height: 800px;
+  padding: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: 6px 6px 6.5px 6px #00000040;
+
+}
+.tasks-projects__title,
+.tasks-Towork__title,
+.tasks-Inwork__title,
+.tasks-complete__title,
+.tasks-lose__title {
+  font-size: 40px;
+  padding: 5px 20px;
+  background-color: #F4F4F4;
+  margin-bottom: 50px;
+  box-shadow: 6px 6px 6.5px 0px #00000040;
+}
+.tasks-projects, .tasks-Towork, .tasks-Inwork, .tasks-complete, .tasks-lose {
+  padding: 15px;
+  font-size: 25px;
+  font-family: Roboto;
+}
+.tasks-Inwork__title {
+  color: #ADA723;
+}
+.tasks-complete__title {
+  color: #37B12C;
+}
+.tasks-lose {
+  color: #C13517;
+}
+.tasks-projects__info_title, 
+.tasks-projects__info_subtitle,
+.tasks-Towork__info_title, 
+.tasks-Towork__info_subtitle, 
+.tasks-Inwork__info_title, 
+.tasks-Inwork__info_subtitle, 
+.tasks-complete__info_title, 
+.tasks-complete__info_subtitle {
+  font-family: Roboto;
+  padding: 10px 10px;
+}
+.tasks-projects__info1,
+.tasks-projects__info2,
+.tasks-projects__info3,
+.tasks-projects__info4,
+.tasks-Towork__info_task1,
+.tasks-Towork__info_task2,
+.tasks-Inwork__info_task1,
+.tasks-Inwork__info_task2,
+.tasks-complete__info_task1,
+.tasks-complete__info_task2 {
+  background-color: #F4F4F4;
+  margin-bottom: 30px;
+  box-shadow: 6px 6px 6.5px 0px #00000040;
+  cursor: pointer;
+}
+.tasks-projects__info.active {
+  background-color: #B6C9DD !important;
+}
+
+.tasks-projects__info1,
+.tasks-projects__info2,
+.tasks-projects__info3,
+.tasks-projects__info4 {
+  cursor: pointer;
+}
+
+.tasks-projects__info1.active,
+.tasks-projects__info2.active,
+.tasks-projects__info3.active,
+.tasks-projects__info4.active {
+  background-color: #B6C9DD;
+}
+
+.tasks-Towork__info_task1,
+.tasks-Inwork__info_task1,
+.tasks-complete__info_task1,
+.tasks-Towork__info_task2,
+.tasks-Inwork__info_task2,
+.tasks-complete__info_task2 {
+  display: none;
+}
+
+.tasks-Towork__info_task1.active,
+.tasks-Inwork__info_task1.active,
+.tasks-complete__info_task1.active {
+  display: block;
+}
+
+.tasks-Towork__info_task2.active,
+.tasks-Inwork__info_task2.active,
+.tasks-complete__info_task2.active {
+  display: block;
+}

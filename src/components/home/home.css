@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  height: 1080px;
+}
+
+.main {
+  font-family: "Roboto Slab", serif;
+  width: 100%;
+  background: #fcfff1;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  color: #2f3a4b;
+}
+.title-text {
+  font-size: 44px;
+  padding: 25px 0 19px 17px;
+}
+.title-exit {
+  padding: 37px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.title-exit__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  color: #2f3a4b;
+}

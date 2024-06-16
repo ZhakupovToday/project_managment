@@ -1,0 +1,65 @@
+body {
+  margin: 0 auto;
+  background: #f4f4f4;
+
+  max-width: 1980px;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffffcf;
+}
+.content {
+  display: flex;
+  height: 1080px;
+}
+.burger {
+  background: #2f3a4b;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+.burger-logo {
+  padding: 37px 106px;
+  display: block;
+}
+.burger-block {
+  padding: 36px 0 627px;
+  margin: 0 auto;
+}
+.burger-block__link {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 21px 34px;
+  font-size: 20px;
+}
+.burger-block__link.active {
+  background: #27303c;
+  border-left: 5px solid #78d3f4;
+  padding: 21px 34px 21px 29px;
+}
+.main {
+  font-family: "Roboto Slab", serif;
+  width: 100%;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  color: #2f3a4b;
+}
+.title-text {
+  font-size: 44px;
+  padding: 25px 0 19px 17px;
+}
+.title-exit {
+  padding: 37px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.title-exit__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  color: #2f3a4b;
+}
